@@ -182,7 +182,10 @@ Movement, Camera Controls, and Collisions (149–175)
 - [ ] Physics and Collisions
 	- [ ] Use `FixedUpdate()` to control game objects using Unity's physics engine
 	- [ ] Apply physics forces to a game object RigidBody using `MovePosition()`
-	- [ ] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider? : **??**
+	- [ ] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider?
+	
+	> Yes, a collision will be detected if both GameObjects have colliders and at least one has a Rigidbody (even if it's Kinematic).
+
 	- [ ] Use `OnCollisionEnter()` to check if a game object has run into another collider
 	- [ ] Use `Destroy()` to remove a game object from the scene
 	- [ ] Use `OnTriggerEnter()` and `OnTriggerExit()` to detect when two colliders start and stop touching

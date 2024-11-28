@@ -25,6 +25,39 @@ public class LearningCurve : MonoBehaviour
 
         float divisionResult = DivideNumbers(20, 4);
         Debug.Log($"Result of DivideNumbers: {divisionResult}");
+
+
+
+
+        Character hero = new Character("Hero", 10);
+        Character heroine = new Character("Heroine", 12);
+
+        hero.PrintStatsInfo();
+        heroine.PrintStatsInfo();
+
+        Weapon huntingBow = new Weapon("Hunting Bow", 15);
+        Weapon warBow = new Weapon("War Bow", 25);
+
+        Debug.Log($"Weapon: {huntingBow.WeaponName}, Damage: {huntingBow.WeaponDamage}");
+        Debug.Log($"Weapon: {warBow.WeaponName}, Damage: {warBow.WeaponDamage}");
+
+        Paladin knight = new Paladin("Knight", 20, warBow);
+
+        knight.PrintStatsInfo();
+
+        Transform cameraTransform = GetComponent<Transform>();
+        Debug.Log($"Main Camera local position: {cameraTransform.localPosition}");
+
+        GameObject lightObject = GameObject.Find("Light");
+        if (lightObject != null)
+        {
+            Transform lightTransform = lightObject.GetComponent<Transform>();
+            Debug.Log($"Light local position: {lightTransform.localPosition}");
+        }
+        else
+        {
+            Debug.Log("Light GameObject not found!");
+        }
     }
 
 

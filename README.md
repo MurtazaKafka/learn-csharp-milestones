@@ -66,16 +66,28 @@ The Building Blocks of Programming (22–37)
 ## Chapter 3
 Diving into Variables, Types, and Methods (38–64)
 
-- [ ] Update Assets/Scripts/LearningCurve.cs
-	- [ ] Variables
-		- [ ] Use access modifiers to make your variables explicitly `public` and `private`
-		- [ ] Use `Debug.Log` and `Debug.LogFormat` to log your variables to the console
-		- [ ] Concatenate strings using the `+` operator, and the string interpolation method `$`
-	- [ ] Methods
-		- [ ] Define a simple method with parameters
-		- [ ] Add a return type and return some data from a method
-		- [ ] Use data returned from a method
-- [ ] ✏️ Explain some differences between public and private variables: **??**
+- [x] Update Assets/Scripts/LearningCurve.cs
+	- [x] Variables
+		- [x] Use access modifiers to make your variables explicitly `public` and `private`
+		- [x] Use `Debug.Log` and `Debug.LogFormat` to log your variables to the console
+		- [x] Concatenate strings using the `+` operator, and the string interpolation method `$`
+	- [x] Methods
+		- [x] Define a simple method with parameters
+		- [x] Add a return type and return some data from a method
+		- [x] Use data returned from a method
+- [ ] ✏️ Explain some differences between public and private variables: 
+
+
+> **_Public Variables:_** 
+Can be accessed by any other class.
+Appear in the Unity Inspector if declared within a MonoBehaviour.
+Useful for exposing variables for designers to tweak without changing the code.
+
+> **_Private Variables:_**
+Only accessible within the class they are declared in.
+Provide encapsulation, which helps to prevent unintended interference.
+Are not visible in the Unity Inspector by default.
+"""
 
 
 ## Chapter 4
